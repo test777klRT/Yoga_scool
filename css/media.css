@@ -45,7 +45,7 @@
 	.header{
 		font-size: 26px;
 		line-height: 30px;
-		min-height: 150px;
+		min-height: 100px;
 	}
 	.some-text{
 		margin-left: 20px;
