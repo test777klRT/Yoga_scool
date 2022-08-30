@@ -71,7 +71,7 @@
 	font-weight: 700;
 	font-size: 18px;
 	}
-	body{
+	body, html{
 		height: 100%;
 	}
 
