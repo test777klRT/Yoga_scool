@@ -30,8 +30,13 @@
 }
 
 /* xs <= Small (sm) */
-@media (max-width : 576px) {
-
+@media (max-width : 610px) {
+ .nav-item_txt{
+		display: none;
+	}
+	.nav-item a{
+		font-size: 36px;
+	}
 }
 
 
@@ -40,7 +45,7 @@
 /* Custom (xs) */
 @media (max-width : 415px) {
 	.content{
-		padding: 120px 50px 90px 30px;;
+		padding: 100px 50px 90px 30px;;
 	}
 	.header{
 		font-size: 26px;
@@ -71,8 +76,8 @@
 	font-weight: 700;
 	font-size: 18px;
 	}
-	body, html{
-		height: 100vh;
+	body, html, .content{
+		height: 100%;
 	}
 
 }

@@ -137,6 +137,7 @@ body {
 	list-style: none;
 	display: flex;
 	margin: 0 20px;
+	padding: 0;
 }
 .nav-item a{
 	text-decoration: none;
@@ -145,11 +146,9 @@ body {
 	margin-left: 30px;
 	display: inline-block;
 }
-.nav-item :hover{
+.nav-item:hover{
 	text-shadow: var(--mainBlue) 1px 0px 5px ;
 	transform: scale(1.05);
-	
-	transition: .5s ease;
 }
 .content{
 	position: relative;
