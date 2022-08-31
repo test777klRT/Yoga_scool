@@ -19,12 +19,14 @@
 
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="css/media.css">
+	<link rel="stylesheet" href="css/micromodal.css">
 
 	<script src="https://kit.fontawesome.com/0237da62b9.js" crossorigin="anonymous"></script>
 
 
 	<script src="libs/jquery/jquery-3.6.0.min.js" defer></script>
 	<script src="js/common.js" defer></script>
+	<script src="https://unpkg.com/micromodal/dist/micromodal.min.js"></script>
 
 </head>
 
@@ -36,9 +38,9 @@
 			<img class="logo-png" src="images/logo.png" alt="logo">	
 		</div>
 		<ul class="nav">
-			<li class="nav-item"><a href="#"><i class="fa-solid fa-comment-dots"></i><span class="nav-item_txt"> What's news</span></a></li>
-			<li class="nav-item"><a href="#"><i class="fa-solid fa-calendar-days"></i><span class="nav-item_txt"> Schedule</span></a></li>
-			<li class="nav-item"><a href="#"><i class="fa-solid fa-address-book"></i><span class="nav-item_txt"> Contact</span></a></li>
+			<li class="nav-item" data-custom-open = "modal-1"><a href="#"><i class="fa-solid fa-comment-dots" ></i><span class="nav-item_txt"> What's news</span></a></li>
+			<li class="nav-item" data-custom-open = "modal-2"><a href="#"><i class="fa-solid fa-calendar-days"></i><span class="nav-item_txt"> Schedule</span></a></li>
+			<li class="nav-item" data-custom-open = "modal-3"><a href="#"><i class="fa-solid fa-map-location"></i><span class="nav-item_txt"> Contact</span></a></li>
 		</ul>
 	</div>
 
@@ -62,8 +64,8 @@
 
 	<ul class="chare-icon">
 		<li class="chare-icon_item"><a href="#"><i class="fa-brands fa-vk"></i></a></li>
-		<li class="chare-icon_item"><a href=""><i class="fa-brands fa-instagram"></i></a></li>
-		<li class="chare-icon_item"><a href=""><i class="fa-brands fa-telegram"></i></a></li>
+		<li class="chare-icon_item"><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+		<li class="chare-icon_item"><a href="#"><i class="fa-brands fa-telegram"></i></a></li>
 	</ul>
 
 
@@ -85,9 +87,68 @@
 		</ul>
 	</div>
 
-
-		
-
+<!-- moda_news -->
+	<div class="modal micromodal-slide" id="modal-1" aria-hidden="true">
+		<div class="modal__overlay" tabindex="-1">
+				<div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-1-title" >
+					<button class="modal__close1 cl-btn-4"  aria-label="закрыть окно" data-custom-close><i class="fa-solid fa-xmark"></i></button>
+								<div class="modyle__title" id="modal-1-title">What's news</div>
+								<div id="modal-1-content">
+									<main class="modal__content">
+									
+									</main>
+									<footer class="modal__footer">
+											
+									</footer>
+								</div>
+				</div>
+		</div>
+	</div>
+	<!-- modal_Schedule -->
+	<div class="modal micromodal-slide" id="modal-2" aria-hidden="true">
+		<div class="modal__overlay" tabindex="-1">
+				<div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-2-title" >
+					<button class="modal__close1 cl-btn-4"  aria-label="закрыть окно" data-custom-close><i class="fa-solid fa-xmark"></i></button>
+								<div class="modyle__title" id="modal-2-title">Schedule</div>
+								<div id="modal-1-content">
+									<form action="#">
+										<main class="modal__content">
+												<input class="form-input modal__input" type="text" name="VH-name" placeholder=" Your name">
+												<input class="form-input modal__input" type="text" name="VH-phone" placeholder=" Your phone">
+												Choose your lesson date
+												<input class="form-input modal__input form-input_date" type="date" name="Date" id="dataToday">
+										</main>
+										<footer class="modal__footer">
+												<button class="button button_send"><span>Send</span></button>
+										</footer>
+									</form>
+								</div>
+				</div>
+		</div>
+	</div>
+	<!-- modal_contact -->
+	<div class="modal micromodal-slide" id="modal-3" aria-hidden="true">
+		<div class="modal__overlay" tabindex="-1">
+				<div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-3-title" >
+					<button class="modal__close1 cl-btn-4"  aria-label="закрыть окно" data-custom-close><i class="fa-solid fa-xmark"></i></button>
+								<div class="modyle__title" id="modal-3-title">Contact</div>
+								<div id="modal-1-content">
+									<main class="modal__content">
+										 <div class="modal__content-cantact">
+												<i class="fa-solid fa-mobile-screen"></i> Phone:+0(XXX)XXX-XX-XX <br>
+												<i class="fa-regular fa-envelope"></i> Email: test@gmail.com
+											</div>
+											<div class="map">
+												<iframe class="map_google" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2513.5833403291103!2d100.03846778213983!3d9.693014276960723!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3054fcf695a1350f%3A0x78ac21f5e5b669b!2sBlue%20Lotus%20Resort!5e0!3m2!1sru!2sru!4v1661931837821!5m2!1sru!2sru" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+											</div>
+									</main>
+									<footer class="modal__footer">
+											
+									</footer>
+								</div>
+				</div>
+		</div>
+	</div>
 
 </body>
 </html>

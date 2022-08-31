@@ -30,7 +30,7 @@
 }
 
 /* xs <= Small (sm) */
-@media (max-width : 610px) {
+@media (max-width : 615px) {
  .nav-item_txt{
 		display: none;
 	}
@@ -63,7 +63,7 @@
 	.img-content{
 		width: 350px;
 	}
-	.button{
+	.button:not(.button_send){
 		background-color: #D9D9D9;
 	}
 	.pagination-box_item{
@@ -78,6 +78,9 @@
 	}
 	body, html, .content{
 		height: 100%;
+	}
+	.img-content{
+		filter: opacity(0.5);
 	}
 
 }
