@@ -2,7 +2,7 @@
 <html>
 
 <head>
-
+	
 	<meta charset="utf-8">
 	<!-- <base href="/"> -->
 
@@ -93,10 +93,10 @@
 				<div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-1-title" >
 					<button class="modal__close1 cl-btn-4"  aria-label="закрыть окно" data-custom-close><i class="fa-solid fa-xmark"></i></button>
 								<div class="modyle__title" id="modal-1-title">What's news</div>
-								<div id="modal-1-content">
-									<main class="modal__content">
+								<div id="modal-3-content">
+									<div class="modal__content">
 									
-									</main>
+									</div>
 									<footer class="modal__footer">
 											
 									</footer>
@@ -112,12 +112,18 @@
 								<div class="modyle__title" id="modal-2-title">Schedule</div>
 								<div id="modal-1-content">
 									<form action="#">
-										<main class="modal__content">
-												<input class="form-input modal__input" type="text" name="VH-name" placeholder=" Your name">
-												<input class="form-input modal__input" type="text" name="VH-phone" placeholder=" Your phone">
+										<div class="modal__content">
+												<input class="form-input modal__input" type="text" name="VH-name" placeholder="Your name">
+												<input class="form-input modal__input" type="tel" name="VH-phone" placeholder="Your phone">
 												Choose your lesson date
-												<input class="form-input modal__input form-input_date" type="date" name="Date" id="dataToday">
-										</main>
+												<input class="form-input modal__input form-input_date" type="date" name="Date" id="dataToday"><br>
+												Choose your lesson time
+												<select class="form-input modal__input form-input_date form-input_date_slt" name="lesson_time">
+													<option value="1">11:00</option>
+													<option value="2">15:30</option>
+													<option value="3">19:00</option>
+												</select>
+										</div>
 										<footer class="modal__footer">
 												<button class="button button_send"><span>Send</span></button>
 										</footer>
@@ -132,8 +138,8 @@
 				<div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-3-title" >
 					<button class="modal__close1 cl-btn-4"  aria-label="закрыть окно" data-custom-close><i class="fa-solid fa-xmark"></i></button>
 								<div class="modyle__title" id="modal-3-title">Contact</div>
-								<div id="modal-1-content">
-									<main class="modal__content">
+								<div id="modal-2-content">
+									<div class="modal__content">
 										 <div class="modal__content-cantact">
 												<i class="fa-solid fa-mobile-screen"></i> Phone:+0(XXX)XXX-XX-XX <br>
 												<i class="fa-regular fa-envelope"></i> Email: test@gmail.com
@@ -141,7 +147,7 @@
 											<div class="map">
 												<iframe class="map_google" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2513.5833403291103!2d100.03846778213983!3d9.693014276960723!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3054fcf695a1350f%3A0x78ac21f5e5b669b!2sBlue%20Lotus%20Resort!5e0!3m2!1sru!2sru!4v1661931837821!5m2!1sru!2sru" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 											</div>
-									</main>
+									</div>
 									<footer class="modal__footer">
 											
 									</footer>
